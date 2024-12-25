@@ -1,2 +1,36 @@
+# Terraform files and directories
 .terraform/
 .terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf
+override.tf.json
+*.tfvars
+*.tfvars.json
+terraform-docs.config.yaml
+terraform-docs.config.json
+
+# Provider plugins
+**/.terraform/plugins/*
+
+# Terraform crash logs
+crash.log
+
+# Temporary files
+*.zip
+*.tar.gz
+*.log
+
+# IDE specific files
+.idea/
+*.iml
+*.vscode/
+
+# Python specific files
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Other
+*.DS_Store
