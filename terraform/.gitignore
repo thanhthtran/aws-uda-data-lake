@@ -13,6 +13,7 @@ terraform-docs.config.json
 
 # Provider plugins
 **/.terraform/plugins/*
+**/.terraform/plugins/*
 
 # Data files
 modules/assets/etl_1_landing_zone/data/**/*.json
