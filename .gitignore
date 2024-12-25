@@ -13,13 +13,12 @@ terraform-docs.config.json
 
 # Provider plugins
 **/.terraform/plugins/*
-**/.terraform/plugins/*
 
 # Data files
-modules/assets/etl_1_landing_zone/data/**/*.json
-modules/assets/etl_1_landing_zone/data/**/*.csv
-modules/assets/etl_1_landing_zone/data/**/*.parquet
-modules/assets/etl_2_truated_zone/**/*.py
+#modules/assets/etl_1_landing_zone/data/**/*.json
+#modules/assets/etl_1_landing_zone/data/**/*.csv
+#modules/assets/etl_1_landing_zone/data/**/*.parquet
+#modules/assets/etl_2_truated_zone/**/*.py
 
 # Terraform crash logs
 crash.log
@@ -41,3 +40,4 @@ __pycache__/
 
 # Other
 *.DS_Store
+
