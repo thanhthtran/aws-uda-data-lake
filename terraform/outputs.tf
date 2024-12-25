@@ -2,6 +2,10 @@ output "project" {
   value = var.project
 }
 
+output "s3_bucket_name" {
+  value       = module.etl_1_landing.s3_bucket_name
+  description = "Name of the S3 bucket created for the data lake"
+}
 # Define an output for the public DNS of the EC2
 # instance
 # output "bastion_host_dns" {
@@ -31,19 +35,19 @@ output "project" {
 
 
 # Outputs ROLE ARN
-output "iam_role_arn" {
-  description = "The ARN of the IAM Role created for Redshift"
-  value       = module.iam_roles.redshift_iam_role_arn
-}
+# output "iam_role_arn" {
+#   description = "The ARN of the IAM Role created for Redshift"
+#   value       = module.iam_roles.redshift_iam_role_arn
+# }
 
-output "redshift_endpoint" {
-  value = module.redshift_cluster.redshift_endpoint
-}
+# output "redshift_endpoint" {
+#   value = module.redshift_cluster.redshift_endpoint
+# }
 
-output "redshift_connection_string" {
-  value     = module.redshift_cluster.redshift_connection_string
-  sensitive = true
-}
+# output "redshift_connection_string" {
+#   value     = module.redshift_cluster.redshift_connection_string
+#   sensitive = true
+# }
 # output "redshift_endpoint" {
 #   value = module.redshift.redshift_endpoint
 # }

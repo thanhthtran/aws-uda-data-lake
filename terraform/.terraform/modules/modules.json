@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"etl_1_landing","Source":"./modules/etl_1_landing","Dir":"modules/etl_1_landing"},{"Key":"vpc","Source":"registry.terraform.io/terraform-aws-modules/vpc/aws","Version":"5.0.0","Dir":".terraform/modules/vpc"}]}

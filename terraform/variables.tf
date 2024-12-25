@@ -88,82 +88,82 @@ variable "single_nat_gateway" {
 }
 
 ## IAM polices variable
-variable "glue_policy_name" {
-  description = "Name for glue custom role"
-  type        = string
-}
-variable "s3_policy_name" {
-  description = "ARN of the created S3 role"
-  type        = string
-}
-variable "redshift_policy_name" {
-  description = "ARN of the created Redshift role"
-  type        = string
-}
-
-# IAM roles:
-variable "iam_role_name" {
-  description = "Name for IAM role"
-  type        = string
-}
-
-
-
-# S3 variable
-variable "staging_bucket_s3" {
-  description = "Staging s3 bucket  name"
-  type        = string
-  default     = "staging"
-}
-
-### RDS Variables ###
-# variable "db_master_username" {
+# variable "glue_policy_name" {
+#   description = "Name for glue custom role"
 #   type        = string
-#   description = "The master username for the RDS instance"
-#   default     = "postgres_admin"
+# }
+# variable "s3_policy_name" {
+#   description = "ARN of the created S3 role"
+#   type        = string
+# }
+# variable "redshift_policy_name" {
+#   description = "ARN of the created Redshift role"
+#   type        = string
+# }
+
+# # IAM roles:
+# variable "iam_role_name" {
+#   description = "Name for IAM role"
+#   type        = string
 # }
 
 
 
+# # S3 variable
+# variable "staging_bucket_s3" {
+#   description = "Staging s3 bucket  name"
+#   type        = string
+#   default     = "staging"
+# }
+
+# ### RDS Variables ###
+# # variable "db_master_username" {
+# #   type        = string
+# #   description = "The master username for the RDS instance"
+# #   default     = "postgres_admin"
+# # }
 
 
-variable "redshift_database_name" {
-  type    = string
-  default = "dev"
-}
 
-variable "redshift_master_username" {
-  type    = string
-  default = "defaultuser"
-}
 
-variable "redshift_master_user_password" {
-  type      = string
-  sensitive = true
-  default   = "Defaultuserpwrd1234+"
-}
 
-variable "redshift_port_number" {
-  type    = number
-  default = 5439
-}
-variable "redshift_cluster_identifier" {
-  type = string
-}
+# variable "redshift_database_name" {
+#   type    = string
+#   default = "dev"
+# }
 
-variable "redshift_node_type" {
-  type = string
-}
-variable "redshift_cluster_type" {
-  type = string
-}
+# variable "redshift_master_username" {
+#   type    = string
+#   default = "defaultuser"
+# }
 
-variable "redshift_number_of_nodes" {
-  type = string
-}
+# variable "redshift_master_user_password" {
+#   type      = string
+#   sensitive = true
+#   default   = "Defaultuserpwrd1234+"
+# }
 
-variable "redshift_cidr" {
-  type = string
-}
+# variable "redshift_port_number" {
+#   type    = number
+#   default = 5439
+# }
+# variable "redshift_cluster_identifier" {
+#   type = string
+# }
 
-# vari
+# variable "redshift_node_type" {
+#   type = string
+# }
+# variable "redshift_cluster_type" {
+#   type = string
+# }
+
+# variable "redshift_number_of_nodes" {
+#   type = string
+# }
+
+# variable "redshift_cidr" {
+#   type = string
+# }
+
+# # vari
